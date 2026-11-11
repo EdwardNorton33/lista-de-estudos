@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estudos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Lista de Estudos</h1>
+        <p>Organize seus estudos de forma simples.</p>
+    </header>
+
+    <main>
+        <section>
+    <h2>Comunicação com o servidor</h2>
+    <p id="mensagem">Aguardando resposta...</p>
+                </section>
+
+        <section class="formulario">
+            <h2>Novo Estudo</h2>
+            <form>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo">
+                
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao"></textarea>
+                
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data">
+                
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                    <option value="">Selecione</option>
+                    <option value="Pendente">Pendente</option>
+                    <option value="Em andamento">Em andamento</option>
+                    <option value="Concluído">Concluído</option>
+                </select>
+                
+                <button type="submit">Adicionar estudo</button>
+            </form>
+        </section>
+        <section class="lista">
+            <h2>Meus Estudos</h2>
+            <div id="lista-estudos">
+                <article class="estudo">
+                    <h3>Estudar JavaScript</h3>
+                    <p>Revisar variáveis, funções e arrays.</p>
+                    <p><strong>Data:</strong> 10/09/2026</p>
+                    <p><strong>Status:</strong> Pendente</p>
+                </article>
+                
+                <article class="estudo">
+                    <h3>Estudar Banco de Dados</h3>
+                    <p>Revisar comandos SQL e conceitos de CRUD.</p>
+                    <p><strong>Data:</strong> 15/09/2026</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                </article>
+            </div>
+        </section>
+    </main>
+<script src="js/app.js" defer></script>
+
+</body>
+</html>
